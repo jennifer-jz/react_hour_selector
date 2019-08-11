@@ -1,0 +1,144 @@
+.hour-selector {
+    padding: 10px;
+    background-color: transparent;
+    margin: 0 auto;
+    border: 2px solid gray;
+    width: 550px;
+}
+
+.hour-selector .date-picker {
+    display: flex;
+    font-size: 12px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.date-picker {
+    width: auto;
+    position: relative;
+}
+
+.date-picker >div {
+    margin-right: 5px;
+    height: auto;
+    display: flex;
+}
+
+.date-picker input {
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    padding: 2px 5px;
+    border: 2px solid green;
+    border-radius: 2px;
+    cursor: text;
+}
+
+.date-picker svg {
+    font-size: 22px;
+}
+
+.date-picker svg:hover {
+    cursor: pointer;
+}
+
+.my-calendar {
+    position: absolute;
+    top: 40px;
+    z-index: 20;
+}
+
+.hour-container-hidden {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hour-container {
+    opacity: 0.8;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    z-index: 0;
+}
+
+.hour-container table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.hour-container tr {
+    border: none;
+    height: 10px;
+}
+
+.hour-container tr:nth-child(1) {
+    height: 20px;
+}
+
+.hour-container td {
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-width: 40px;
+    max-width: 40px;
+}
+
+.hour-container td:first-child {
+    border-left: 2px solid black;
+}
+
+.hour-container td:last-child {
+    border-right: 2px solid transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent; 
+}
+
+.ruler-cell-up {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 10px;
+    text-align: left;
+}
+
+.ruler-cell-down {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    height: 10px;
+}
+
+.hour-picker {
+    position: absolute;
+    left: calc(50% - 10px);
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+}
+
+.hour-mask {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background: yellow;
+    opacity: 0.5;
+    border: 2px solid black;
+    z-index: 10;
+}
+
+.hour-mask:hover {
+    cursor: pointer;
+}
