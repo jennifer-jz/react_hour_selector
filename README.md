@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Live Demo
+# Live Demo
 http://react.scientrans.com:3000/
 
-### Steps to run the app
+# Steps to run the app
 
 ## Switch to root folder
 cd react_hour_selector
@@ -19,7 +19,7 @@ npm start
 http://localhost:3000/
 
 
-### Component Specification
+# Component Specification
 - react-calendar
 Props
     date: Date   // default date selected
@@ -38,7 +38,7 @@ State
     leftOffset: Number // offset of the scale as it is dragged horizontally
 
 
-### App Implementation
+# App Implementation
 
 ## Environment Establishment
 We use create-react-app module to establish the running environment of this app. We use font-awesome for the avatar of calendar picker. 
